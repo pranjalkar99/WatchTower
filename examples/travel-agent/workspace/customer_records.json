@@ -1,0 +1,5 @@
+[
+  {"id": "C-1001", "name": "Priya Sharma", "email": "priya@example.com", "passport": "J8369854", "pnr": "BLR-NRT-ANA848"},
+  {"id": "C-1002", "name": "Ken Tanaka", "email": "ken@example.com", "passport": "TK4492011", "pnr": "NRT-SFO-UA901"},
+  {"id": "C-1003", "name": "Alex Morgan", "email": "alex@corp.com", "passport": "US8827103", "credit_card": "4111-1111-1111-1111"}
+]

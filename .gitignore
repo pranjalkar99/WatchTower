@@ -1,0 +1,27 @@
+# Python
+backend/.venv/
+examples/travel-agent/.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+backend/.hf_cache/
+
+# Node
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+
+# Env & secrets
+.env
+.env.local
+.env.*
+!.env.example
+examples/travel-agent/.env
+examples/travel-agent/workspace/.env
+
+# OS
+.DS_Store
+
+# IDE
+.idea/
+.vscode/

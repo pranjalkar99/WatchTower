@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-[#0a0e17] text-slate-100 antialiased;
+  background-image:
+    radial-gradient(ellipse 80% 50% at 50% -20%, rgba(56, 189, 248, 0.08), transparent),
+    radial-gradient(ellipse 60% 40% at 100% 100%, rgba(239, 68, 68, 0.04), transparent);
+  min-height: 100vh;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 3px;
+}
+
+.glass {
+  @apply border border-slate-800/80 bg-slate-900/60 backdrop-blur-xl;
+}
+
+.stat-glow-green {
+  box-shadow: inset 0 1px 0 0 rgba(52, 211, 153, 0.1);
+}
+
+.stat-glow-red {
+  box-shadow: inset 0 1px 0 0 rgba(248, 113, 113, 0.1);
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+.live-dot {
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+
+@keyframes slide-in {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.event-enter {
+  animation: slide-in 0.3s ease-out;
+}
+
+.react-flow__node {
+  font-family: var(--font-sans);
+}
+
+@media print {
+  aside,
+  button {
+    display: none !important;
+  }
+
+  main {
+    margin-left: 0 !important;
+    padding: 0 !important;
+  }
+
+  body {
+    background: white !important;
+    color: black !important;
+  }
+
+  .glass {
+    border: 1px solid #ccc !important;
+    background: white !important;
+  }
+}

@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+watchtower/__init__.py
+watchtower/client.py
+watchtower/decorators.py
+watchtower_sentinel.egg-info/PKG-INFO
+watchtower_sentinel.egg-info/SOURCES.txt
+watchtower_sentinel.egg-info/dependency_links.txt
+watchtower_sentinel.egg-info/requires.txt
+watchtower_sentinel.egg-info/top_level.txt

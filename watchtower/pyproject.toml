@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "watchtower-sentinel"
+version = "0.1.0"
+description = "Drop-in security layer for AI agents — connects to SentinelAI dashboard"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "httpx>=0.27.0",
+]
+
+[project.optional-dependencies]
+langgraph = ["langgraph>=0.2.0", "langchain-core>=0.3.0"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["watchtower*"]

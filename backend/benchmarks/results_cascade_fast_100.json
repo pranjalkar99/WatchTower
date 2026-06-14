@@ -1,0 +1,84 @@
+{
+  "dataset": "deepset/prompt-injections",
+  "split": null,
+  "max_samples": 100,
+  "sentinel_llm_judge": "0",
+  "threshold": 32,
+  "cascade": {
+    "tp": 15,
+    "tn": 43,
+    "fp": 42,
+    "fn": 0,
+    "accuracy": 0.58,
+    "precision": 0.2632,
+    "recall": 1.0,
+    "f1": 0.4167
+  },
+  "per_layer": {
+    "regex": {
+      "tp": 7,
+      "tn": 85,
+      "fp": 0,
+      "fn": 8,
+      "accuracy": 0.92,
+      "precision": 1.0,
+      "recall": 0.4667,
+      "f1": 0.6364
+    },
+    "semantic": {
+      "tp": 15,
+      "tn": 0,
+      "fp": 85,
+      "fn": 0,
+      "accuracy": 0.15,
+      "precision": 0.15,
+      "recall": 1.0,
+      "f1": 0.2609
+    },
+    "behavior": {
+      "tp": 0,
+      "tn": 85,
+      "fp": 0,
+      "fn": 15,
+      "accuracy": 0.85,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "llm_agent": {
+      "tp": 0,
+      "tn": 85,
+      "fp": 0,
+      "fn": 15,
+      "accuracy": 0.85,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "fused": {
+      "tp": 15,
+      "tn": 43,
+      "fp": 42,
+      "fn": 0,
+      "accuracy": 0.58,
+      "precision": 0.2632,
+      "recall": 1.0,
+      "f1": 0.4167
+    }
+  },
+  "layer_score_averages": {
+    "blocked": {
+      "regex": 5.61,
+      "semantic": 52.53,
+      "behavior": 0.18,
+      "fused": 45.29
+    },
+    "allowed": {
+      "regex": 0.0,
+      "semantic": 49.86,
+      "behavior": 0.0,
+      "fused": 17.42
+    }
+  },
+  "misclassified_count": 42
+}
