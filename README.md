@@ -22,6 +22,22 @@ npm run dev
 
 Open [http://localhost:3000/chat](http://localhost:3000/chat) for live testing, or [http://localhost:3000/dashboard](http://localhost:3000/dashboard) for the SOC view.
 
+## Presentation & launch assets
+
+**Hackathon deck (video)** — 14-slide judge presentation (~2 min):
+
+https://github.com/pranjalkar99/WatchTower/raw/main/assets/presentation/watchtower-deck.mp4
+
+<video src="https://github.com/pranjalkar99/WatchTower/raw/main/assets/presentation/watchtower-deck.mp4" controls width="100%"></video>
+
+| Asset | Path |
+|-------|------|
+| Deck video | [`assets/presentation/watchtower-deck.mp4`](assets/presentation/watchtower-deck.mp4) |
+| Slide deck (HTML) | [`assets/presentation/watchtower-deck.html`](assets/presentation/watchtower-deck.html) |
+| Re-render video | `./assets/presentation/render-video.sh` |
+
+**Product launch animation** (screen-record): open [`assets/launch/watchtower-launch.html`](assets/launch/watchtower-launch.html) in a browser — ~45s cinematic with real dashboard screenshots.
+
 ## Attach to Any Agent (LangGraph + OpenAI)
 
 WatchTower ships as a **drop-in SDK** — wrap any agent in 3 lines:

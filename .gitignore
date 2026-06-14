@@ -22,6 +22,4 @@ examples/travel-agent/workspace/.env
 # OS
 .DS_Store
 
-# IDE
-.idea/
-.vscode/
+assets/presentation/.render-frames/
