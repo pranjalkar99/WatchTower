@@ -23,3 +23,6 @@ examples/travel-agent/workspace/.env
 .DS_Store
 
 assets/presentation/.render-frames/
+
+# Jupyter
+.ipynb_checkpoints/
